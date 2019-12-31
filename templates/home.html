@@ -193,15 +193,36 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
-
                         <div id="github-graph" class="github-graph">
+                          <script
+                            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
+                          ></script>
+
+                          <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                          <link
+                             rel="stylesheet"
+                             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+                          <!-- Prepare a container for your calendar. -->
+                          <div class="calendar">
+                              <!-- Loading stuff -->
+                              Loading the data just for you.
+                          </div>
+
+                          <script>
+                              GitHubCalendar(".calendar", "matthew-sessions");
+                              // or enable responsive functionality
+                              GitHubCalendar(".calendar", "matthew-sessions", { responsive: true });
+                          </script>
 
                         </div><!--//github-graph-->
 
                         <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
                         <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
                         <div id="ghfeed" class="ghfeed">
+                          <script>
+                            GitHubActivity.feed({ username: "matthew-sessions", selector: "#feed" });
+                          </script>
                         </div><!--//ghfeed-->
 
                     </div><!--//secton-inner-->
