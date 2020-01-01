@@ -3,6 +3,7 @@
 <head>
     <title>Matthew Sessions Portfolio site</title>
     <!-- Meta -->
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="static/assets2/plugins/bootstrap/css/bootstrap.min.css">
 
-    <!-- github calendar static/static/assets22>
+    <!-- github calendar css -->
     <link rel="stylesheet" href="static/assets2/plugins/github-calendar/dist/github-calendar.css">
     <!-- github activity css -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
@@ -95,10 +96,10 @@
                                     <p><a class="more-link" href="https://github.com/matthew-sessions/Spotify_API_Interface" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
                                 </div><!--//desc-->
                             </div><!--//item-->
-
                             <div class="item row">
                                 <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">
                                 <img class="img-fluid project-image" src="static/assets2/images/projects/project-2.png" alt="project name" />
+
                                 </a>
                                 <div class="desc col-md-8 col-12">
                                     <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devstudio-bootstrap-theme-for-web-development-agencies-and-developers/" target="_blank">DevStudio - Bootstrap 4 Theme for WebDev Agencies and Freelance Developers</a></h3>
@@ -193,36 +194,13 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
+
                         <div id="github-graph" class="github-graph">
-                          <script
-                            src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-                          ></script>
-
-                          <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-                          <link
-                             rel="stylesheet"
-                             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
-                          <!-- Prepare a container for your calendar. -->
-                          <div class="calendar">
-                              <!-- Loading stuff -->
-                              Loading the data just for you.
-                          </div>
-
-                          <script>
-                              GitHubCalendar(".calendar", "matthew-sessions");
-                              // or enable responsive functionality
-                              GitHubCalendar(".calendar", "matthew-sessions", { responsive: true });
-                          </script>
 
                         </div><!--//github-graph-->
 
-                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="https://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
                         <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
                         <div id="ghfeed" class="ghfeed">
-                          <script>
-                            GitHubActivity.feed({ username: "matthew-sessions", selector: "#feed" });
-                          </script>
                         </div><!--//ghfeed-->
 
                     </div><!--//secton-inner-->
@@ -442,6 +420,6 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="static/assets2/plugins/github-activity/github-activity-0.1.5.min.js"></script>
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="static/assets2/js/main.js"></script>
 </body>
 </html>
