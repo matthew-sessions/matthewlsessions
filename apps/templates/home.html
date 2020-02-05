@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Matthew Sessions Portfolio site</title>
+    <!-- Meta -->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online resume/portfolio for Matthew L Sessions">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108410204-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-108410204-1');
+		</script>
+		<link rel="icon" href="apps/static/images/data-analytics.png">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- FontAwesome JS -->
+    <script defer src="apps/static/assets2/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="apps/static/assets2/plugins/bootstrap/css/bootstrap.min.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="apps/static/assets2/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="apps/static/assets2/plugins/github-activity/github-activity-0.1.5.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="apps/static/assets2/css/styles.css">
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left" src="apps/static/assets2/images/profile.png" alt="James Lee" />
+            <div class="profile-content float-left">
+                <h1 class="name">Matthew L Sessions</h1>
+                <h2 class="desc">Data Science | Data Engineering</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/Matt_Sesh"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/matthew-sessions/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/matthew-sessions"><i class="fab fa-github-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.facebook.com/matthewlsessions/"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="/resume" target="_blank"><i class="fas fa-file"></i> View Résumé</a>
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am a driven 24 year old with a passion for creating intricate systems that help optimize business growth. Early in my career as a Digital Marketing Specialist I started writing Python scripts that automated daily tasks. With a basic understanding of software development, I leveraged multiple Python libraries for the purpose of scraping/collecting data from competing platforms, creating custom insight reports, automating marketing tasks, and developing dynamic web applications for internal departments. I quickly discovered the proprietary advantage that modern programming techniques can offer all types of businesses, and I set out on a journey to truly understand how to make data driven business decisions. Fast forward to today, I have undergone over 1500 hours of intensive Data Science training at Lambda School covering: Data Storytelling, Data Visualization, Predictive Modeling, Software Engineering, Natural Language Processing, Neural Networks, and Cloud Computing.</p>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://citrics.io" target="_blank">Citrics</a></h3>
+                                <p class="summary">Comprehensive City Data Comparison App</p>
+                                <div class="containerss">
+                                    <iframe src="https://www.youtube.com/embed/1pL9bVkWPO4" 
+                                    frameborder="0" allowfullscreen class="video"></iframe>
+                                </div>
+                                <div class="desc text-left" style="margin-bottom: 7px;">
+                                    <br>
+                                    <p>Created a feature-rich NoSQL database comprised of City Data Metrics from a variety of sources. Built a RESTful API on Flask that serves data to web applications. Deployed various predictive models to suggest cities that correspond with user preferences. Deployed the entire production application to AWS using Elastic Beanstalk and Docker.</p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="https://www.citrics.io/" target="_blank"><i class="fas fa-chart-bar"></i>View the Site</a>
+                                <a class="btn btn-cta-secondary" href="https://api.citrics.io/docs" target="_blank"><i class="fas fa-file"></i>View the API Docs</a>
+                            </div><!--//item-->
+                            <hr class="divider" />
+<!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="http://subredditapp.matthewlsessions.com/" target="_blank">
+                                <img class="img-fluid project-image" src="apps/static/assets2/images/projects/music.jpg" alt="project name" />
+
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://spotirecer.herokuapp.com/" target="_blank">Discover songs you'll love - Spotify song recommender</a></h3>
+                                    <p class="mb-2">This application uses the Spotify API along with a KD-Tree model to recommend new songs you’ll like based on songs that you listen to frequently. This post documents the incredibly robust API that I built using Flask.</p>
+                                    <p><a class="more-link" href="https://github.com/matthew-sessions/Spotify_API_Interface" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->
+                            </div>
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="http://subredditapp.matthewlsessions.com/" target="_blank">
+                                <img class="img-fluid project-image" src="apps/static/images/redditw.jpg" alt="project name" />
+
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="http://subredditapp.matthewlsessions.com/" target="_blank">Where should I post? - Subreddit recommender</a></h3>
+                                    <p class="mb-2">This application analyzes subreddit posts and identifies Subreddits that are likely to maximize reach and engagement around said posts. I‌ used the Reddit API to collected data, the Sklearn TFIDF Vectorizer to transform the text data, and a KD-Tree model to find similar Subreddits.</p>
+                                    <p><a class="more-link" href="https://github.com/matthew-sessions/Subreddit_Recommender" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://sea-solar.herokuapp.com/" target="_blank">
+                                <img class="img-fluid project-image" src="apps/static/images/pdp.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://sea-solar.herokuapp.com/" target="_blank">Solar Output Forecaster - Live 24 hour Global Horizontal Irradiance Level (GHI) predictions</a></h3>
+                                    <p class="mb-2">This app uses a Random Forest Regressor to predict the Global Horizontal Irradiance level (GHI) for multiple locations in Southeast Asia. This post takes a closer look at how this model works.</p>
+                                    <p><a class="more-link" href="https://sea-solar.herokuapp.com/process" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title">Brand Analyst - <span class="place"><a href="https://www.tronsmart.com/">Tronsmart - Shenzhen, China</a></span> <span class="year">(Jun 2018 - Present)</span></h3>
+                                <ul>
+                                  <li>Studied demographic data (using Python) to determine optimal targets, competitor offerings and tactics for persuasion</li>
+                                  <li>Developed scalable marketing systems to turn offline retail traffic into digital leads</li>
+                                  <li>Created a Facebook Messenger marketing strategy that decreased cost per lead by 65%</li>
+                                </ul>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Digital Marketing Analyst - <span class="place"><a href="https://www.geekbuying.com/">Geekbuying - Shenzhen, China</a></span> <span class="year">(Feb 2018 - Feb 2020)</span></h3>
+                                <ul>
+                                  <li>Built web crawlers that provide insight into our competitor's pricing strategies and product placement</li>
+                                  <li>Created custom competitor reports that drive decisions of product managers, sourcing managers, and the marketing team</li>
+                                  <li>Managed all Facebook marketing campaigns (Buying & Planning)</li>
+                                </ul>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+
+                        <div id="github-graph" class="github-graph">
+
+                        </div><!--//github-graph-->
+
+                        <!--//Usage: https://caseyscarborough.com/projects/github-activity/ -->
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Seattle, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">matthewlsessions@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.matthewlsessions.com</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Top Technical Skills</h2>
+                        <div class="content">
+                            <div class="flex-container">
+                                <div><p id="rcorners3">Python Programming</p></div>
+                                <div><p id="rcorners3">Data Storytelling</p></div>
+                                <div><p id="rcorners3">Data Exploration/Wrangling</p></div>
+                                <div><p id="rcorners3">NLP</p></div>
+                                <div><p id="rcorners3">API Development</p></div>
+                                <div><p id="rcorners3">Data Engineering</p></div>
+                                <div><p id="rcorners3">SQL & NoSQL</p></div>
+                                <div><p id="rcorners3">Predictive Modeling</p></div>
+                                <div><p id="rcorners3">Web Scraping</p></div>
+                                <div><p id="rcorners3">ETL Pipelines</p></div>
+                                <div><p id="rcorners3">Task Automation</p></div>
+                              </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Libraries & Technologies</h2>
+                        <p>Brief listing of the technologies and libraries I frequently use</p>
+                        <div class="content">
+                            <div class="flex-container">
+                                <div><p id="rcorners3">AWS</p></div>
+                                <div><p id="rcorners3">Docker</p></div>
+                                <div><p id="rcorners3">IPython Notebooks</p></div>
+                                <div><p id="rcorners3">Flask</p></div>
+                                <div><p id="rcorners3">Sklearn</p></div>
+                                <div><p id="rcorners3">Pandas</p></div>
+                                <div><p id="rcorners3">Numpy</p></div>
+                                <div><p id="rcorners3">Scipy</p></div>
+                                <div><p id="rcorners3">NLTK</p></div>
+                                <div><p id="rcorners3">Keras/Tensorflow</p></div>
+                                <div><p id="rcorners3">SpaCy</p></div>  
+                                <div><p id="rcorners3">BeautifulSoup</p></div>                              
+                              </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fas fa-quote-left"></i>Matthew is an incredibly hard worker with the ability to learn new things very fast. He is the perfectly guy to go to if you need a sound solution for a complex business problem!</p>
+                                </blockquote>
+                                <p class="source"><span class="name">Colin Yan</span><br /><span class="title">Tronsmart CEO</span></p>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Malay:</strong></span>
+                                    <span class="level">Fluent<br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></span>
+                                </li><!--//item-->
+                              </li><!--//item-->
+                              <li class="item">
+                                  <span class="title"><strong>Mandarin Chinese:</strong></span>
+                                  <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                              </li><!--//item-->
+                              <li class="item">
+                                  <span class="title"><strong>Indonesian:</strong></span>
+                                  <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                              </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside>
+
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Lambda School</h3>
+                                <h4 class="university">Data Science Track <span class="year">(Aug 2019 - May 2020)</span></h4>
+                                <h5 class="university">Intensive training in Linear Algebra, Statistics, Natural Language Processing, Machine Learning, Data Engineering, and Cloud Computing.</h5>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Beijing Language University</h3>
+                                <h3 class="university">CSC Business Chinese Program <span class="year">(Aug 2016 - Dec 2017)</span></h3>
+                                <h5 class="university">Passed the CSC exam (The official Chinese Government Language exam for foreigners) and passed HSK 5 (Chinese proficiency exam with six levels).</h5>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Research & Presentations</h2>
+                        <div class="contents">
+                            <h5>Building a robust API from scratch</h5>
+                            <p>This is a slide show for how the Citric API was created. It covers everything from data sourcing to application deployment. </p>
+                            <a class="more-link" href="https://docs.google.com/presentation/d/1d7sk8eKj25dVvFoWsu9aERXwdkw6JH33FIgaYkq3bt4/edit?usp=sharing" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a>
+                        </div><!--//content-->
+                        <div class="contents">
+                            <h5>Logistic Regression - Predicting Solar Output</h5>
+                            <p>High-level overview on how to predict the solar output from weather data and the Zenith Angle.</p>  
+                          <a class="more-link" href="https://sea-solar.herokuapp.com/process" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a>
+                        </div>  
+                        <div class="contents">
+                            <h5>KD-Tree - Discover songs you’ll love</h5>
+                            <p>This Readme file talks about how to use the Spotify API along with the Sklearn library to find songs you’ll enjoy.</p>  
+                          <a class="more-link" href="https://github.com/matthew-sessions/Spotify_API_Interface" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a>
+                        </div>                        
+                    </div><!--//section-inner-->
+                </aside>
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small >Matthew Sessions 2020</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="apps/static/assets2/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="apps/static/assets2/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="apps/static/assets2/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="apps/static/assets2/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="apps/static/assets2/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="apps/static/assets2/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="apps/static/assets2/js/main.js"></script>
+</body>
+</html>
