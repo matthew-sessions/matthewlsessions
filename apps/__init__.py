@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request,  url_for, redirect,jsonify
-
+from flask_sitemap import Sitemap
 
 def create_app():
     app = Flask(__name__, static_url_path='/apps/static')
+    ext = Sitemap(app=app)
 
     @app.route('/')
     def index():
@@ -28,4 +29,9 @@ def create_app():
     def resume():
         return render_template('resume.html')
 
+    @ext.register_generator
+    def index():
+        # Not needed if you set SITEMAP_INCLUDE_RULES_WITHOUT_PARAMS=True
+        yield 'index', {}
+        
     return(app)    
