@@ -1,0 +1,29 @@
+
+body{
+    background-color: #EBE5D7;
+  
+  }
+
+.headings{
+    color: #21618C;
+    font-family: 'Chonburi';
+}
+.subtitles{
+    font-family: 'Kanit';
+}
+
+.infoblock{
+    border: 3px;
+    border-radius: 6px;
+    border-color: #21618C;
+    border-style: solid;
+
+}
+.infotext{
+    font-family: 'Kanit';
+    font-size: 17px;
+}
+
+.iconlist{
+    color: #21618C
+}
