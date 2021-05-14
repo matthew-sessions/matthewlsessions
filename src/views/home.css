@@ -1,8 +1,5 @@
 
-body{
-    background-color: #EBE5D7;
-  
-  }
+
 
 .headings{
     color: #21618C;
@@ -17,6 +14,7 @@ body{
     border-radius: 6px;
     border-color: #21618C;
     border-style: solid;
+    margin-bottom: 10px;
 
 }
 .infotext{
@@ -27,3 +25,36 @@ body{
 .iconlist{
     color: #21618C
 }
+
+
+
+.titles{
+    margin-bottom: -25px;
+    color: #21618C
+}
+.skills{
+    background-color: #21618C;
+    color: white;
+    padding: 3px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 3px;
+    margin-bottom: 4px;
+    font-family: 'Kanit';
+    font-size: 14px;
+  }
+  .flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .language{
+    font-family: 'Kanit';
+    font-size: 17px;
+
+  }
+
+  .sub{
+    font-family: 'Kanit';
+    font-size: 15px;
+  }
